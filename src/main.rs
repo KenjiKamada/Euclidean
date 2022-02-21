@@ -4,7 +4,7 @@ use rand::Rng;
 fn main() {
    // let mut Za = 3355;
   
-    let Zb = rand::thread_rng().gen_range(1, 101);
+    let Zb = rand::thread_rng().gen_range(1, 1000);
 //    let Zb = 2379;
     let mut amari: [i32; 1000] = [0; 1000];
     let mut kakeru: [i32; 1000] = [0; 1000];
