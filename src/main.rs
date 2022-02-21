@@ -9,7 +9,7 @@ fn main() {
     
     println!("最大公約数を求める整数を入力してください");
 
-    // 数値の入力
+    // 数値の入力 https://magidropack.hatenablog.com/entry/2018/12/19/131919
     let mut number = String::new();
     io::stdin().read_line(&mut number).ok();
     let Za = number.trim().parse().ok().unwrap();
