@@ -1,12 +1,17 @@
 use std::io;
+use rand::Rng;
 
 fn main() {
    // let mut Za = 3355;
-    let Zb = 2379;
+  
+    let Zb = rand::thread_rng().gen_range(1, 101);
+//    let Zb = 2379;
     let mut amari: [i32; 1000] = [0; 1000];
     let mut kakeru: [i32; 1000] = [0; 1000];
     let mut kotae =0; 
     
+    println!("{}との最大公約数を求めます。",Zb);
+
     println!("最大公約数を求める整数を入力してください");
 
     // 数値の入力 https://magidropack.hatenablog.com/entry/2018/12/19/131919
@@ -17,6 +22,7 @@ fn main() {
         _ => println!("{}を入力しました。",Za),
     }
                                         // end of 数値の入力
+    println!("{}と{}の最大公約数を求めます。",Za,Zb);
     
     kakeru[0] = Za;
     amari[0] = Zb;
